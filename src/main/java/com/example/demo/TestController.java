@@ -11,12 +11,12 @@ public class TestController {
 
     @GetMapping("/health")
     public Map<String, String> health() {
-        return Map.of("status", "UP");
+        return Map.of("status", "Ok");
     }
 
     @GetMapping("/test")
     public Map<String, String> test() {
-        return Map.of("message", "Hello from Spring Boot!");
+        return Map.of("message", "test");
     }
 }
 
